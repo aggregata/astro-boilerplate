@@ -1,0 +1,43 @@
+---
+const { meta } = Astro.props;
+const { origin, href } = Astro.url;
+
+const title = meta?.title ? `${meta.title} &bull; Astro Starter` : "Astro Starter";
+---
+
+<head>
+  <link rel="icon" href={`${origin}/icons/favicon.svg`} />
+  <link rel="canonical" href={href} hreflang="de-DE" />
+  <meta charset="utf-8" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title set:html={title} />
+  <meta name="title" content={title} />
+  <meta name="og:title" content={title} />
+  <meta name="twitter:title" content={title} />
+  <meta name="og:url" content={href} />
+  <meta property="og:locale" content="de_DE" />
+  <meta name="twitter:url" content={href} />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  {
+    meta?.description && (
+      <>
+        <meta name="description" content={meta.description} />
+        <meta name="og:description" content={meta.description} />
+        <meta name="twitter:description" content={meta.description} />
+      </>
+    )
+  }
+  {
+    meta?.image && (
+      <>
+        <meta property="og:image" content={origin + meta.image.src} />
+        <meta property="og:image:alt" content={meta.image?.alt} />
+        <meta name="twitter:image" content={origin + meta.image.src} />
+        <meta name="twitter:image:alt" content={meta.image?.alt} />
+      </>
+    )
+  }
+  <slot />
+</head>
