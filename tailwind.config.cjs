@@ -66,7 +66,7 @@ module.exports = {
             "--tw-prose-bold": "var(--foreground)",
             "--tw-prose-counters": "var(--accent)",
             "--tw-prose-bullets": "var(--accent)",
-            "--tw-prose-hr": "var(--accent)",
+            "--tw-prose-hr": "var(--border)",
             "--tw-prose-quotes": "var(--foreground)",
             "--tw-prose-quote-borders": "var(--accent)",
             "--tw-prose-captions": "var(--muted-foreground)",
