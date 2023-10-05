@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from "astro:transitions";
+
 const { meta } = Astro.props;
 const { origin, href } = Astro.url;
 
@@ -39,5 +41,6 @@ const title = meta?.title ? `${meta.title} &bull; Astro Boilerplate` : "Astro Bo
       </>
     )
   }
+  <ViewTransitions fallback="swap" />
   <slot />
 </head>

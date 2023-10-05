@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["components/**", "layouts/**", "pages/**"],
+  content: ["components/**", "layouts/**", "pages/**", "public/**"],
   theme: {
     extend: {
       fontSize: {
@@ -56,7 +56,7 @@ module.exports = {
       fontFamily: {
         sans: "var(--font-sans)",
       },
-      typography: ({ theme }) => ({
+      typography: () => ({
         accent: {
           css: {
             "--tw-prose-body": "var(--muted-foreground)",
