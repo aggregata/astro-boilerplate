@@ -4,6 +4,17 @@ import Meta from "@/components/meta.astro";
 import Navigation from "@/components/navigation.astro";
 import Footer from "@/components/footer.astro";
 
+interface Props {
+  meta: {
+    title?: string;
+    description?: string;
+    image?: {
+      src: string;
+      alt?: string;
+    };
+  };
+}
+
 const { meta } = Astro.props;
 ---
 

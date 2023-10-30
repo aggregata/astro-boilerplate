@@ -1,10 +1,23 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 
+interface Props {
+  meta: {
+    title?: string;
+    description?: string;
+    image?: {
+      src: string;
+      alt?: string;
+    };
+  };
+}
+
 const { meta } = Astro.props;
 const { origin, href } = Astro.url;
 
-const title = meta?.title ? `${meta.title} &bull; Astro Boilerplate` : "Astro Boilerplate";
+const title = meta?.title
+  ? `${meta.title} &bull; Astro Boilerplate`
+  : "Astro Boilerplate";
 ---
 
 <head>
