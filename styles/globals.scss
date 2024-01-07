@@ -6,15 +6,13 @@
 
 @layer base {
   :root {
-    --font-sans: "system-ui", "sans-serif";
-
     // Default background color of <body />...etc
-    --background: 250 250 250; // Zinc 50
-    --foreground: 9 9 11; // Zinc 950
+    --background: 240 5% 96%; // Zinc 100
+    --foreground: 240 10% 4%; // Zinc 950
 
     // Muted backgrounds such as <TabsList />, <Skeleton /> and <Switch />
-    --muted: 244 244 245; // Zinc 100
-    --muted-foreground: 82 82 91; // Zinc 600
+    --muted: 0 0% 98%; // Zinc 50
+    --muted-foreground: 240 5% 34%; // Zinc 600
 
     // Background color for <Card />
     --card: var(--background);
@@ -25,7 +23,7 @@
     --popover-foreground: var(--foreground);
 
     // Default border color
-    --border: 228 228 231; // Zinc 200
+    --border: 240 6% 90%; // Zinc 200
 
     // Border color for inputs such as <Input />, <Select />, <Textarea />
     --input: var(--border);
@@ -39,11 +37,11 @@
     --secondary-foreground: var(--background);
 
     // Used for accents such as hover effects on <DropdownMenuItem>, <SelectItem>...etc
-    --accent: 79 70 229; // Indigo 600
+    --accent: 243 75% 59%; // Indigo 600
     --accent-foreground: var(--background);
 
     // Used for destructive actions such as <Button variant="destructive">
-    --destructive: 220 38 38; // Red 600
+    --destructive: 0 72% 51%; // Red 600
     --destructive-foreground: var(--background);
 
     // Used for focus ring
@@ -53,11 +51,11 @@
     --radius: 0.75rem;
 
     @media (prefers-color-scheme: dark) {
-      --background: 9 9 11; // Zinc 950
-      --foreground: 250 250 250; // Zinc 50
+      --background: 240 10% 4%; // Zinc 950
+      --foreground: 0 0% 98%; // Zinc 50
 
-      --muted: 24 24 27; // Zinc 900
-      --muted-foreground: 161 161 170; // Zinc 400
+      --muted: 240 6% 10%; // Zinc 900
+      --muted-foreground: 240 5% 65%; // Zinc 400
 
       --card: var(--background);
       --card-foreground: var(--foreground);
@@ -65,7 +63,7 @@
       --popover: var(--background);
       --popover-foreground: var(--foreground);
 
-      --border: 39 39 42; // Zinc 800
+      --border: 240 4% 16%; // Zinc 800
 
       --input: var(--border);
 
@@ -75,10 +73,10 @@
       --secondary: var(--foreground);
       --secondary-foreground: var(--background);
 
-      --accent: 129 140 248; // Indigo 400
+      --accent: 234 89% 74%; // Indigo 400
       --accent-foreground: var(--background);
 
-      --destructive: 248 113 113; // Red 400
+      --destructive: 0 91% 71%; // Red 400
       --destructive-foreground: var(--background);
 
       --ring: var(--accent);
