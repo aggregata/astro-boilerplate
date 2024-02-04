@@ -1,0 +1,8 @@
+---
+const { class: classes, variant } = Astro.props;
+let { default: icon } = await import(`../public/icons/${variant}.svg?raw`)
+
+icon = icon.replaceAll("<svg", `<svg class="${[classes, "shrink-0"].join(" ")}" aria-hidden="true"`)
+---
+
+<Fragment set:html={icon} />
