@@ -84,6 +84,22 @@
       --radius: 0.75rem;
     }
   }
+
+  [x-cloak] {
+    display: none !important;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply bg-background text-muted-foreground;
+  }
+
+  main[tabindex='-1'] {
+    outline: none;
+  }
 }
 
 @layer utilities {
