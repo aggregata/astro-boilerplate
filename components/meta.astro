@@ -22,11 +22,12 @@ const title = meta?.title
 
 <head>
   <link rel="icon" href={`${origin}/icons/favicon.svg`} />
-  <link rel="canonical" href={href} hreflang="de-DE" />
+  <link rel="canonical" href={href} />
+  <link rel="sitemap" href={`${Astro.site}sitemap-index.xml`} />
+  <title set:html={title} />
   <meta charset="utf-8" />
   <meta name="generator" content={Astro.generator} />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title set:html={title} />
   <meta name="title" content={title} />
   <meta name="og:title" content={title} />
   <meta name="twitter:title" content={title} />
