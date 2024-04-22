@@ -1,4 +1,6 @@
-export const sleep = (miliseconds: number) => new Promise((r) => setTimeout(r, miliseconds));
+export const sleep = (miliseconds: number) => {
+  return new Promise((r) => setTimeout(r, miliseconds));
+};
 
 export const local = (key: string, value: any = null): object => {
   if (value != null) localStorage[key] = JSON.stringify(value);

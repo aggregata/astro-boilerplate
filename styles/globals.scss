@@ -97,7 +97,7 @@
     @apply bg-background text-muted-foreground;
   }
 
-  main[tabindex='-1'] {
+  main[tabindex="-1"] {
     outline: none;
   }
 }
@@ -109,7 +109,7 @@
       prose-accent
       prose-blockquote:border-l-accent
       prose-headings:scroll-my-36
-      prose-headings:text-foreground
+      prose-headings:text-foreground;
   }
 
   .no-scrollbar {
