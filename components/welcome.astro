@@ -60,16 +60,20 @@ import data from "@/package.json";
     <h2 class="!mt-5 text-foreground">
       What's new in version {data.version}?
     </h2>
+    <h3>Added</h3>
+      <ul>
+        <li>support for high contrast to respect <code>prefers-contrast</code></li>
+      </ul>
     <h3>Changed</h3>
     <ul>
-      <li>package versions to respect minor update versions</li>
-      <li>
-        color space from <code>rgb()</code> to <code>hsl()</code> to comply with
-        <a
-          href="https://ui.shadcn.com/docs/theming"
-          target="_blank"
-          rel="noopener noreferrer">shadcn/ui</a>
-      </li>
+      <li>location of design tokens to <code>styles/tokens.scss</code></li>
+      <li>package versions to reflect latest changes</li>
+      <li>location of styles for <code>html</code> and <code>body</code> elements</li>
+      <li>text size utility class from <code>text-s</code> to <code>text-small</code></li>
+    </ul>
+    <h3>Removed</h3>
+    <ul>
+      <li>text size utility class <code>text-xs</code> due to accessiblity concerns</li>
     </ul>
   </section>
 
