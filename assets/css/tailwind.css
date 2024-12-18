@@ -3,7 +3,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-    --color-background: light-dark(var(--color-zinc-100), var(--color-zinc-100));
+    --color-background: light-dark(var(--color-zinc-100), var(--color-zinc-950));
     --color-foreground: light-dark(var(--color-zinc-950), var(--color-zinc-100));
 
     --color-muted: light-dark(var(--color-zinc-50), var(--color-zinc-900));
